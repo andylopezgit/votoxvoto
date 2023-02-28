@@ -3,6 +3,7 @@ import VueRouter from "vue-router";
 import Home from "../views/Home.vue";
 import eleccionView from "@/views/eleccionView.vue";
 import conteoView from "@/views/conteoView.vue";
+import contactoView from "@/views/ContactoView.vue";
 
 Vue.use(VueRouter);
 
@@ -21,6 +22,11 @@ const routes = [
     path: "/conteo",
     name: "conteo",
     component: conteoView,
+  },
+  {
+    path: "/contacto",
+    name: "contacto",
+    component: contactoView,
   },
   {
     path: "/about",

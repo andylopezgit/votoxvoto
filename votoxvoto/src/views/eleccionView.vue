@@ -2,7 +2,7 @@
   <v-container fluid>
 
     <v-row justify="first" class="mt-4">
-      <v-col cols="4">
+      <v-col cols="5">
         <v-card>
           <v-card-title>
             <h3>Configuracion de Eleccion a Fiscalizar</h3>
@@ -81,7 +81,7 @@
 
 
       </v-col>
-      <v-col cols="8">
+      <v-col cols="7">
         <v-img :src="require('../assets/votacion1.png')" alt="logo-votacion"
                contain
                height="400"/>

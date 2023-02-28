@@ -28,14 +28,17 @@
           <v-card-actions>
             <v-row>
               <v-col>
-                <v-btn class="success" block><v-icon>
-                  mdi-plus
+                <v-btn class="success" block><v-icon
+                size="30px"
+                >
+                  mdi-plus-box-outline
                 </v-icon></v-btn>
               </v-col>
               <v-col>
                 <v-btn class="error" block>
-                  <v-icon>
-                    mdi-minus
+                  <v-icon
+                      size="30px">
+                    mdi-minus-box-outline
                   </v-icon>
                 </v-btn>
               </v-col>
@@ -70,14 +73,16 @@
           <v-card-actions>
             <v-row>
               <v-col>
-                <v-btn class="success" block><v-icon>
-                  mdi-plus
+                <v-btn class="success" block><v-icon
+                    size="30px">
+                  mdi-plus-box-outline
                 </v-icon></v-btn>
               </v-col>
               <v-col>
                 <v-btn class="error" block>
-                  <v-icon>
-                    mdi-minus
+                  <v-icon
+                  size="30px">
+                    mdi-minus-box-outline
                   </v-icon>
                 </v-btn>
               </v-col>
