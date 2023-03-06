@@ -1,57 +1,48 @@
 <template>
   <v-app>
-    <v-app-bar
-      app
-      color="primary"
-      dark
-    >
+    <v-app-bar app color="primary" dark>
       <div class="d-flex align-center">
-        <v-img
-          alt="Vuetify Logo"
-          class="shrink mr-2"
-          contain
-          src="https://cdn.vuetifyjs.com/images/logos/vuetify-logo-dark.png"
-          transition="scale-transition"
-          width="40"
-        />
+        <v-icon>mdi-cellphone</v-icon>
 
-        <v-img
-          alt="Vuetify Name"
-          class="shrink mt-1 hidden-sm-and-down"
-          contain
-          min-width="100"
-          src="https://cdn.vuetifyjs.com/images/logos/vuetify-name-dark.png"
-          width="100"
-        />
+        <h2>VotoxVoto</h2>
       </div>
 
       <v-spacer></v-spacer>
-
-      <v-btn
-        href="https://github.com/vuetifyjs/vuetify/releases/latest"
-        target="_blank"
-        text
-      >
-        <span class="mr-2">Latest Release</span>
-        <v-icon>mdi-open-in-new</v-icon>
-      </v-btn>
+      <nav>
+        <span class="me-4">
+          <router-link to="/" tag="button">Inicio</router-link>
+        </span>
+        <span class="me-4">
+          <router-link to="/about" tag="button">Nosotros</router-link>
+        </span>
+        <span  class="me-4">
+          <router-link to="/eleccion" tag="button">Elecciones</router-link>
+        </span>
+        <span  class="me-4">
+          <router-link to="/conteo" tag="button">Votacion</router-link>
+        </span>
+        <span  class="me-4">
+          <router-link to="/contacto" tag="button">Contacto</router-link>
+        </span>
+        <span  class="me-4">
+          <v-icon
+          size="30px"
+          >
+            mdi-account-circle
+          </v-icon>
+        </span>
+      </nav>
     </v-app-bar>
 
     <v-main>
-      <HelloWorld/>
+      <router-view />
     </v-main>
   </v-app>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld';
-
 export default {
-  name: 'App',
-
-  components: {
-    HelloWorld,
-  },
+  name: "App",
 
   data: () => ({
     //
