@@ -173,12 +173,62 @@
     </v-row>
     <v-row v-if="resultados">
       <v-col>
-        <v-card elevation="5" height="300px">
+        <v-card elevation="5" class="pa-2">
           <v-card-title>
               <h2>Resultados Finales</h2>
           </v-card-title>
-          <v-card-text>
-              {{listaA}} -   {{listaB}} -   {{blancos}} -   {{inpugnados}}
+          <v-card-text class="mt-2">
+            <template>
+              <v-row class="flex-column">
+               <div>
+                 <v-avatar
+                     color="indigo"
+                     size="60"
+                     class="ma-2"
+                 >
+                   <span class="white--text text-h5">{{ listaA }}</span>
+                 </v-avatar>
+                 <span>Votos Lista A</span>
+               </div>
+
+                <div>
+
+                  <v-avatar
+                      color="indigo"
+                      size="60"
+                      class="ma-2"
+                  >
+                    <span class="white--text text-h5">{{ listaB }}</span>
+                  </v-avatar>
+                  <span>Votos Lista B</span>
+                </div>
+
+                <div>
+
+                  <v-avatar
+                      color="teal"
+                      size="60"
+                      class="ma-2"
+                  >
+                    <span class="white--text text-h5">{{ blancos }}</span>
+                  </v-avatar>
+                  <span>Votos Blancos</span>
+                </div>
+
+                <div>
+
+                  <v-avatar
+                      color="orange"
+                      size="60"
+                      class="ma-2"
+                  >
+                    <span class="white--text text-h5">{{ inpugnados}}</span>
+                  </v-avatar>
+                  <span>Votos Inpugnados</span>
+                </div>
+
+              </v-row>
+            </template>
           </v-card-text>
         </v-card>
       </v-col>
